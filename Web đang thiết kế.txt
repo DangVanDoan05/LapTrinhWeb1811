@@ -1,0 +1,17 @@
+
+
+http://localhost:8888/WebBanHang/
+
+
+
+http://localhost:8888/WebBanHang/index.php
+
+
+
+// Ở nhà:   http://localhost:8888/WebBanHang/
+
+
+
+
+
+

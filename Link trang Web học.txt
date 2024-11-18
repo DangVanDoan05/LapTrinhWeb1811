@@ -1,0 +1,29 @@
+
+*** Link trang web học:(ASP.net tạo trang web với Visual)
+
+https://www.youtube.com/watch?v=PDAr6DpJfIY&list=PLPNDi-wPpMzgEZnBnAAijM-SS7SidP2jr&index=1
+
+*** Link trang web học:
+
+https://www.w3schools.com/php/php_variables.asp
+
+*** Link Video( Gà lại lập trình):
+
+https://www.youtube.com/watch?v=eKeHOuxD_ZU&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=18
+
+*** HTML để đánh dấu, hiển thị văn bản, đoạn văn bản.
+*** CSS: hiển thị hình ảnh, màu sắc văn bản.
+
+// Đường dẫn tiến lùi.
+
+Link CSS: https://vietjack.com/css/cu_phap_css.jsp
+
+// Học làm trang Web full Stack Font-End và Back-End.
+
+https://www.youtube.com/watch?v=KeO2VAlXBMM&list=PLPNLZmPSwSkc0jZwYBIxHjACQrq16lJQe&index=11
+
+
+
+
+
+
