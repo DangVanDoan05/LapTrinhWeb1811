@@ -15,6 +15,10 @@ namespace Web2.Controllers
         public ActionResult Index()  // Đây là một phương thức.
         {           
             return View();
-        }    
+        }
+        public ActionResult Category()  // Xuất ra View Category
+        {
+            return View();
+        }
     }
 }
