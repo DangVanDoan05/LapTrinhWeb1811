@@ -1,0 +1,92 @@
+﻿
+@{
+  
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel=" stylesheet" href="~/css/Categorycss.css"/>
+    <title>Danh mục sản phẩm</title>
+</head>
+<body>
+    <header>
+        <h1>Quản lý bán hàng.</h1> <!--Sẽ làm nội dung cho phần Header sau -->
+    </header>
+    <section class="admin-content">
+        <div class="admin-content-left">
+            <ul>
+                <li>
+                    <a href="">Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Tất cả sản phẩm</a></li>
+                        <li><a href="">Thêm mới</a></li>
+                        <li><a href="">Danh mục</a></li>
+                        <li><a href="">Các thuộc tính</a></li>
+                    </ul>
+                </li>
+                `
+                <li>
+                    <a href="">Thành viên</a>
+                    <ul>
+                        <li><a href="">Tất cả thành viên</a></li>
+                        <li><a href="">Thêm thành viên</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="admin-content-right">
+            <div class="admin-content-right-category_add">
+                <h1>Thêm Danh Mục</h1>
+                <form action="" method="POST">
+                    <input type="text" placeholder="Nhập tên danh mục" />
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+        <div class="danh-sach-danh-muc">
+            <div class="ds-danh-muc">
+               
+                <table>
+
+                    <caption>Danh sách danh mục sản phẩm</caption>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>---Tên danh mục---</th>
+                        <th>---Mô tả---</th>
+                    </tr>
+
+                    @{
+                        using DAO;
+
+                        List<DanhMucDTO> ls = SanPhamDAO.Instance.GetListSP();
+
+                        foreach (SanPhamDTO item in ls)
+                        {
+
+                            <tr>
+                                <br>
+                                <!-- Thẻ tr xác định phần tử của bảng. -->
+                                <td>-----@item.Id-----</td>
+                                <td>-----@item.Ten-----</td>
+                                <td>-----@item.Gia-----</td>
+                            </tr>
+                        }
+
+
+
+
+                    }
+
+                </table>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

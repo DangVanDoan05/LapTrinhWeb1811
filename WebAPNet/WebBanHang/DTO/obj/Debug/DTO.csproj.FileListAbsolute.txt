@@ -1,0 +1,6 @@
+E:\LAP TRINH WebPHP\WebAPNet\WebBanHang\DTO\bin\Debug\DTO.dll
+E:\LAP TRINH WebPHP\WebAPNet\WebBanHang\DTO\bin\Debug\DTO.pdb
+E:\LAP TRINH WebPHP\WebAPNet\WebBanHang\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\LAP TRINH WebPHP\WebAPNet\WebBanHang\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\LAP TRINH WebPHP\WebAPNet\WebBanHang\DTO\obj\Debug\DTO.dll
+E:\LAP TRINH WebPHP\WebAPNet\WebBanHang\DTO\obj\Debug\DTO.pdb
