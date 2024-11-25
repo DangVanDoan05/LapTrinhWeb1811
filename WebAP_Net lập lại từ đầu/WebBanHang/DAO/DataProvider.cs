@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DAO
 {
-   public class DataProvider
+    public class DataProvider
     {
         private static DataProvider instance;
 
@@ -19,7 +20,8 @@ namespace DAO
 
         private DataProvider() { }
 
-        public string strcon = "";
+
+        public string strcon = "Data Source=192.168.4.48,1433;Initial Catalog=WebSiteBanHang;User ID=sa;Password=P@ssword@123456";
 
 
 
@@ -46,10 +48,8 @@ namespace DAO
                 SqlDataAdapter adap = new SqlDataAdapter(cmd);
                 adap.Fill(data);
                 sqlcon.Close();
-
             }
             return data;
-
         }
 
         public int ExecuteNonQuery(string query, object[] para = null)
@@ -71,7 +71,6 @@ namespace DAO
                             i++;
                         }
                     }
-
                 }
 
                 data = cmd.ExecuteNonQuery();
@@ -110,4 +109,3 @@ namespace DAO
         }
     }
 }
-
