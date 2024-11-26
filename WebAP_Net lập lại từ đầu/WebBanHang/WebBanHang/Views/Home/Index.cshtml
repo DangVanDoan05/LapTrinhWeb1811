@@ -42,10 +42,14 @@
 
         <div class="admin-content-right">
             <div class="admin-content-right-category_add">
-                <h1>Thêm Danh Mục</h1>
-                <form action="" method="POST">
-                    <input type="text" placeholder="Nhập tên danh mục" />
-                    <button type="submit">Thêm</button>
+                <h1>Thêm Danh Mục Mới.</h1>
+                <!-- Phần action thì sẽ điền link đến phần Controller và Action nhận dữ liệu. -->
+                <form action="~/Home/ThemDanhMuc" method="POST">
+
+                    <input type="text" placeholder="Nhập tên danh mục" name="TenDM" value="DANG VAN DOAN"/>
+                    @*<br />
+                    <input type="text" placeholder="Nhập mô tả" name="MoTa"/>*@
+                    <button type="submit" class="btn btn-default">Thêm mới</button>
                 </form>
             </div>
         </div>

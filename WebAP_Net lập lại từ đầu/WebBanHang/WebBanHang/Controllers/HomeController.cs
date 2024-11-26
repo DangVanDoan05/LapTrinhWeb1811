@@ -18,9 +18,12 @@ namespace WebBanHang.Controllers
            
         }
 
-        public ActionResult ThemDanhMuc()
+        public ActionResult ThemDanhMuc(string TenDM)
         {    
-            return View();
+            DanhMucDAO.Instance.in
+            // Lưu thêm mới danh mục.
+            // quay trở về trang 
+            return View(TenDM);
         }
 
 
