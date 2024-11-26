@@ -10,6 +10,7 @@ namespace WebBanHang.Controllers
 {
     public class HomeController : Controller
     {
+
         // GET: Home
         public ActionResult Index()
         {
@@ -18,16 +19,13 @@ namespace WebBanHang.Controllers
            
         }
 
-        public ActionResult ThemDanhMuc(string TenDM)
-        {    
-            DanhMucDAO.Instance.in
+        public ActionResult ThemDanhMuc(string TenDM,string MoTa)
+        {
+            DanhMucDAO.Instance.Insert(TenDM, MoTa);
             // Lưu thêm mới danh mục.
             // quay trở về trang 
-            return View(TenDM);
+            return RedirectToAction("Index");
         }
 
-
     }
-
-
 }
