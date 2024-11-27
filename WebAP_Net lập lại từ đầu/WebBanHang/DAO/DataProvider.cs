@@ -21,10 +21,10 @@ namespace DAO
         private DataProvider() { }
 
         // In My Company
-      //  public string strcon = "Data Source=192.168.4.48,1433;Initial Catalog=WebSiteBanHang;User ID=sa;Password=P@ssword@123456";
+        public string strcon = "Data Source=192.168.4.48,1433;Initial Catalog=WebSiteBanHang;User ID=sa;Password=P@ssword@123456";
 
         
-        public string strcon = "Data Source=192.168.0.10,1433;Initial Catalog=WebBanHang;User ID=sa;Password=12345678";
+      //  public string strcon = "Data Source=192.168.0.10,1433;Initial Catalog=WebBanHang;User ID=sa;Password=12345678";
 
 
         public DataTable ExecuteQuery(string query, object[] para = null)

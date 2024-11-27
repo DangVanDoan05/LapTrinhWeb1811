@@ -19,6 +19,7 @@ namespace WebBanHang.Controllers
            
         }
 
+
         public ActionResult ThemDanhMuc(string TenDM,string MoTa)
         {
             DanhMucDAO.Instance.Insert(TenDM, MoTa);
@@ -26,6 +27,14 @@ namespace WebBanHang.Controllers
             // quay trở về trang 
             return RedirectToAction("Index");
         }
+
+
+        public ActionResult CapNhatDanhMuc(int IdDanhMuc)
+        {
+           // Cần truyền vào đối tượng cần cập nhật.
+            return RedirectToAction("Index");
+        }
+         // Tạo ra một View để cập nhật đơn hàng.
 
     }
 }

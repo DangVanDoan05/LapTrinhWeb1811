@@ -48,7 +48,7 @@
 
                     <input type="text" placeholder="Nhập tên danh mục" name="TenDM" />
                     <br />
-                    <input type="text" placeholder="Nhập mô tả" name="MoTa"/>
+                    <input type="text" placeholder="Nhập mô tả" name="MoTa" />
                     <button type="submit" class="btn btn-default">Thêm mới</button>
                 </form>
             </div>
@@ -75,51 +75,33 @@
                             <td>@item.ID</td>
                             <td>@item.TENDM</td>
                             <td>@item.MOTA</td>
-                            <td><a href="">Sửa</a>|<a href="">Xóa</a></td>  <!-- đường Link để sửa và xóa. -->
+                            @*// chèn thẻ a vào đây nhưng lại muốn lấy được thông tin của danh mục.*@
+                            <td class="NutBam"><a href="">Sửa</a>|<a href="">Xóa</a></td>  <!-- đường Link để sửa và xóa. -->
                         </tr>
                     }
                 </table>
             </div>
+        </div>
 
+        <div class="sua-danh-muc">
+            <div class="sua-danh-muc-moi">
+
+                <h1>Sửa Danh Mục </h1>
+                <!-- Phần action thì sẽ điền link đến phần Controller và Action nhận dữ liệu. -->
+                <form action="~/Home/ThemDanhMuc" method="POST">
+                    <input type="text" placeholder="ID danh mục chọn" name="ID" />
+                    <br />
+                    <input type="text" placeholder="Nhập tên danh mục muốn đổi lại" name="TenDMMoi" />
+                    <br />
+                    <input type="text" placeholder="Nhập mô tả muốn đổi lại" name="MoTaMoi" />
+                    <button type="submit" class="btn btn-default">Sửa danh mục.</button>
+
+                </form>
+            </div>
         </div>
 
 
 
-        @*<thead>
-
-
-            </thead>*@
-        <!-- Thẻ tBody để in các dữ liệu -->
-        @*<tbody>
-
-                <!-- In thủ công thì sẽ mất thời gian. -->
-                <!--Sử dụng vòng lặp While để in tự động.-->
-                <!--Phải kết nối cơ sở dữ liệu.-->
-                <h1>Danh sách danh mục</h1>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Tên danh mục</th>
-                            <th>Mô tả</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.ID</td>
-                                <td>@item.TENDM</td>
-                                <td>@item.MOTA</td>
-                            </tr>
-                        }
-
-                    </tbody>
-
-                </table>
-
-            </tbody>*@
 
     </section>
 </body>

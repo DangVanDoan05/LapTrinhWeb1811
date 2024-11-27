@@ -100,7 +100,7 @@ header {
 }
 
 .admin-content-category {
-    width: 60%;
+    width: 40%;
     padding: 30px 0 0 12px;
     background-color: #ffffff;
 }
@@ -114,6 +114,42 @@ header {
 table {
     border-collapse: collapse;  
 }
+.NutBam
+{
+    text-decoration-color:red;
+}
+
+.sua-danh-muc {
+    margin-left:20px;
+    background-color: red;
+    width: 20%;
+    padding: 30px 0 0 12px;
+}
+
+.sua-danh-muc-moi input {
+    height: 30px;
+    width: 200px;
+    padding-left: 12px; /*Điều chỉnh độ rộng của ô nhập liệu.*/
+    margin-top: 20px;
+}
+
+.sua-danh-muc-moi button {
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: brown;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+    .sua-danh-muc-moi button:hover {
+        background-color: transparent;
+        border: 1px solid brown;
+        color: brown;
+    }
 
 
 
