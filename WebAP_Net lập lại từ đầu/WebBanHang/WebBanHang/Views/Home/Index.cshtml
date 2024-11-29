@@ -71,13 +71,14 @@
 
                     @foreach (var item in Model)
                     {
-                        <tr>
-                            <td>@item.ID</td>
-                            <td>@item.TENDM</td>
-                            <td>@item.MOTA</td>
-                            @*// chèn thẻ a vào đây nhưng lại muốn lấy được thông tin của danh mục.*@
-                            <td class="NutBam"><a href="">Sửa</a>|<a href="">Xóa</a></td>  <!-- đường Link để sửa và xóa. -->
-                        </tr>
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.TENDM</td>
+                        <td>@item.MOTA</td>
+                        @*// chèn thẻ a vào đây nhưng lại muốn lấy được thông tin của danh mục.*@
+                        <td class="NutBam"><a href="~/Home/CapNhatDanhMuc?idDanhMuc=@item.ID">Sửa</a>|<a href="">Xóa</a></td>  <!-- đường Link để sửa và xóa. -->
+                        @*// đã lấy thành công Id danh mục.*@
+                    </tr>
                     }
                 </table>
             </div>

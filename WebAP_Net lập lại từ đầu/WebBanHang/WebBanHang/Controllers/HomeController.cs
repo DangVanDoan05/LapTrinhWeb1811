@@ -29,12 +29,15 @@ namespace WebBanHang.Controllers
         }
 
 
-        public ActionResult CapNhatDanhMuc(int IdDanhMuc)
+        public ActionResult CapNhatDanhMuc(int idDanhMuc)
         {
-           // Cần truyền vào đối tượng cần cập nhật.
-            return RedirectToAction("Index");
+
+            DanhMucDTO dmDTO = DanhMucDAO.Instance.GetDanhMucDTO(idDanhMuc);
+            return View(dmDTO);
+
         }
-         // Tạo ra một View để cập nhật đơn hàng.
+
+       
 
     }
 }

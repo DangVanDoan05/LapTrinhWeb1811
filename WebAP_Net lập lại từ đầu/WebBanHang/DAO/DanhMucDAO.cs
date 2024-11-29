@@ -43,6 +43,16 @@ namespace DAO
             return lsv;
         }
 
+
+        public DanhMucDTO GetDanhMucDTO(int id)
+        {
+            string query = " select * from DSDANHMUC WHERE ID= @id ";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { id });            
+            DanhMucDTO dmDTO = new DanhMucDTO(data.Rows[0]);                         
+            return dmDTO;
+        }
+
+
         // HAM THEM
 
         public int Insert(string TenDM, string MOTA)
@@ -52,6 +62,7 @@ namespace DAO
             return data;
         }
 
+       
 
         // HAM SUA
 
