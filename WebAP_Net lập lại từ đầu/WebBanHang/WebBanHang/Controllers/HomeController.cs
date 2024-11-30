@@ -12,11 +12,11 @@ namespace WebBanHang.Controllers
     {
 
         // GET: Home
+
         public ActionResult Index()
         {
             List<DanhMucDTO> Ls = DanhMucDAO.Instance.GetListDM();
-            return View(Ls);
-           
+            return View(Ls);         
         }
 
 
@@ -31,13 +31,24 @@ namespace WebBanHang.Controllers
 
         public ActionResult CapNhatDanhMuc(int idDanhMuc)
         {
-
             DanhMucDTO dmDTO = DanhMucDAO.Instance.GetDanhMucDTO(idDanhMuc);
             return View(dmDTO);
-
         }
 
-       
+
+        public ActionResult IndexSua(string idDanhMuc)
+        {
+            int id = int.Parse(idDanhMuc);
+            DanhMucDTO dmDTO = DanhMucDAO.Instance.GetDanhMucDTO(id);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult SuaDanhMuc(string idDanhMuc,string TenDMMoi, string MoTaMoi)
+        {
+            int id = int.Parse(idDanhMuc);
+            DanhMucDAO.Instance.Update(id, TenDMMoi, MoTaMoi);           
+            return RedirectToAction("Index");
+        }
 
     }
 }
