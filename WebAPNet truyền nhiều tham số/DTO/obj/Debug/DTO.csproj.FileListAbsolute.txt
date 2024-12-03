@@ -10,3 +10,9 @@ D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại
 D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại từ đầu\WebBanHang\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại từ đầu\WebBanHang\DTO\obj\Debug\DTO.dll
 D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại từ đầu\WebBanHang\DTO\obj\Debug\DTO.pdb
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\bin\Debug\DTO.dll
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\bin\Debug\DTO.pdb
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.dll
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.pdb

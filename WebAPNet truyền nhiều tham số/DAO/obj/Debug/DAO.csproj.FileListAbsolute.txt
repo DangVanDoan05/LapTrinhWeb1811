@@ -25,3 +25,12 @@ D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại
 D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại từ đầu\WebBanHang\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại từ đầu\WebBanHang\DAO\obj\Debug\DAO.dll
 D:\Lập trình WebVisualStudio-01-12-2024\LapTrinhWeb0112\WebAP_Net lập lại từ đầu\WebBanHang\DAO\obj\Debug\DAO.pdb
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\bin\Debug\DAO.dll
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\bin\Debug\DAO.pdb
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\bin\Debug\DTO.dll
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\bin\Debug\DTO.pdb
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.dll
+E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.pdb

@@ -31,15 +31,7 @@ namespace WebBanHang.Controllers
 
         // bây giờ đang muốn nó ánh xạ thông tin khi sửa ngay tại trang chủ.
 
-        public ActionResult CapNhatDanhMuc(int idDanhMuc)
-        {
-
-            DanhMucDTO dmDTO = DanhMucDAO.Instance.GetDanhMucDTO(idDanhMuc);
-            return View(dmDTO);
-        }
-
-
-
+      
         public ActionResult CapNhatDanhMucMoi(string idDanhMuc)
         {
             List<DanhMucDTO> Ls = DanhMucDAO.Instance.GetListDM();
@@ -49,6 +41,19 @@ namespace WebBanHang.Controllers
             return View(dsMoi);
         }
 
+        public ActionResult DanhmucSauSua(string idDanhMuc, string TenDMmoi, string MoTamoi)
+        {
+
+            // Chạy câu lệnh Update trước sau đó Lấy lên list danh mục.
+         
+            int idDMmoi = int.Parse(idDanhMuc);
+            DanhMucDAO.Instance.Update(idDMmoi,TenDMmoi, MoTamoi);
+
+           // List<DanhMucDTO> Ls = DanhMucDAO.Instance.GetListDM();
+                          
+            return RedirectToAction("Index");
+
+        }
 
     }
 }

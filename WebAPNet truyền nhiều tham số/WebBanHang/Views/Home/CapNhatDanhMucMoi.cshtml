@@ -90,13 +90,14 @@
 
                 <h1>Sửa Danh Mục </h1>
                 <!-- Phần action thì sẽ điền link đến phần Controller và Action nhận dữ liệu. -->
-                <form action="~/Home/CapNhatDanhMucMoi" method="POST">
-                    <input type="text" placeholder="@Model.IDDMSUA" name="ID" />
+                <form action="~/Home/DanhmucSauSua" method="POST">
+
+                    <input type="text" placeholder="@Model.IDDMSUA" name="idDanhMuc" value="@Model.IDDMSUA"/>
                     <!-- Truyền thử xem đã. -->
                     <br />
-                    <input type="text" placeholder="@Model.TENDM" name="TenDMMoi" />
+                    <input type="text" placeholder="@Model.TENDM" name="TenDMmoi" />
                     <br />
-                    <input type="text" placeholder="@Model.MOTA" name="MoTaMoi" />
+                    <input type="text" placeholder="@Model.MOTA" name="MoTamoi" />
                     <button type="submit" class="btn btn-default">Sửa danh mục.</button>
 
                 </form>
