@@ -55,5 +55,13 @@ namespace WebBanHang.Controllers
 
         }
 
+        public ActionResult XoaDanhMuc(string idDanhMuc)
+        {
+           
+            int idDMmoi = int.Parse(idDanhMuc);
+            DanhMucDAO.Instance.Delete(idDMmoi);      
+            return RedirectToAction("Index");
+        }
+
     }
 }

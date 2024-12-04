@@ -104,6 +104,7 @@
     <Content Include="css\Category.css" />
     <Content Include="css\CategoryUpdate.css" />
     <Content Include="Global.asax" />
+    <Content Include="js\XoaDM.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

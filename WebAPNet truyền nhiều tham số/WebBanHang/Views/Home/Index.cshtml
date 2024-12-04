@@ -71,15 +71,21 @@
 
                     @foreach (var item in Model)
                     {
-                    <tr>
-                        <td>@item.ID</td>
-                        <td>@item.TENDM</td>
-                        <td>@item.MOTA</td>
-                        @*// chèn thẻ a vào đây nhưng lại muốn lấy được thông tin của danh mục.*@
-                        <td class="NutBam"><a href="~/Home/CapNhatDanhMucMoi?idDanhMuc=@item.ID">Sửa</a>|<a href="">Xóa</a></td>  <!-- đường Link để sửa và xóa. -->
-                        @*// đã lấy thành công Id danh mục.*@
-                        @*// Sử dụng câu lệnh If, câu lệnh Nếu.*@
-                    </tr>
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.TENDM</td>
+                            <td>@item.MOTA</td>
+                            @*// chèn thẻ a vào đây nhưng lại muốn lấy được thông tin của danh mục.*@
+                            <td class="NutBam">
+                                <a href="~/Home/CapNhatDanhMucMoi?idDanhMuc=@item.ID">Sửa</a>|
+                                <a href="~/Home/XoaDanhMuc?idDanhMuc=@item.ID" onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục: @item.TENDM');">Xóa</a>
+                                @*<a href="#" onclick="XoaDanhMuc(@item.ID)">Xóa</a>*@
+                                @*<a href=" ./js/XoaDM.js">Xóa</a>*@
+                            </td>
+                            <!-- đường Link để sửa và xóa. -->
+                            @*//Link href="Link đến Controller muốn vào/Action muốn vào/tham số truyền vào Action." //*@
+                            @*// Sử dụng câu lệnh If, câu lệnh Nếu.*@
+                        </tr>
                     }
                 </table>
             </div>
@@ -100,11 +106,40 @@
 
                 </form>
             </div>
+
         </div>
 
-
-
-
     </section>
+
+    @section scripts {
+        <script>
+            //function xoa() {
+            //    if (confirm('Bạn có chắc chắn muốn xóa?')) {
+            //        // Thực hiện hành động xóa ở đây (ví dụ: gọi một hàm AJAX để gửi yêu cầu xóa đến server)
+            //        $.ajax({
+            //            url: '/Home/XoaDanhMuc',
+            //            data: { id: 123 }, // Gửi ID của bản ghi cần xóa
+            //            success: function (result) {
+            //                // Xử lý kết quả trả về từ server
+            //                alert('Xóa thành công!');
+            //            },
+            //            error: function (error) 
+            //                // Xử lý lỗi
+            //                alert('Có lỗi xảy ra!');
+            //            }
+            //        });
+            //    }
+            //}
+            ////var XoaDanhMuc = function (idDanhMuc) {
+            //    if (confirm("Bạn  chắc chắn muốn xóa danh mục có ID= " + idDanhMuc + " hay không?") == true) {
+            //        location.href = "/Home/XoaDanhMuc?idDanhMuc=" + idDanhMuc
+            //    }
+
+        </script>
+    }
+
+  
+
 </body>
 </html>
+
