@@ -1,0 +1,113 @@
+﻿@model DTO.DanhMucMoiDTO
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/Category.css" rel="stylesheet" />
+    <title>HomeIndex_Danh mục sản phẩm.</title>
+</head>
+<body>
+    <header>
+        <h1>Trang danh mục sản phẩm.</h1> <!--Sẽ làm nội dung cho phần Header sau -->
+    </header>
+
+    <section class="admin-content">
+
+        <div class="admin-content-left">
+            <ul>
+                <li>
+                    <a href="">Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Tất cả sản phẩm</a></li>
+                        <li><a href="">Thêm mới</a></li>
+                        <li><a href="">Danh mục</a></li>
+                        <li><a href="">Các thuộc tính</a></li>
+                    </ul>
+                </li>
+                `
+                <li>
+                    <a href="">Thành viên</a>
+                    <ul>
+                        <li><a href="">Tất cả thành viên</a></li>
+                        <li><a href="">Thêm thành viên</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="admin-content-right">
+            <div class="admin-content-right-category_add">
+                <h1>Thêm Danh Mục Mới.</h1>
+                <!-- Phần action thì sẽ điền link đến phần Controller và Action nhận dữ liệu. -->
+                <form action="~/Home/ThemDanhMuc" method="POST">
+
+                    <input type="text" placeholder="Nhập tên danh mục" name="TenDM" />
+                    <br />
+                    <input type="text" placeholder="Nhập mô tả" name="MoTa" />
+                    <button type="submit" class="btn btn-default">Thêm mới</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="admin-content-category">
+            <div class="admin-content-category_list">
+                <!-- Thẻ để tạo bảng. -->
+                <h1>Danh sách danh mục</h1>
+                <table>
+                    <tr>
+
+                        <th>ID</th>   <!-- Thẻ th là tiêu đề của bảng  -->
+                        <th>Tên danh mục</th>
+                        <th>Mô tả</th>
+                        <th>Tùy biến</th>  <!-- để thêm nút sửa xóa vào trang này. -->
+
+                    </tr>
+
+                    @foreach (var item in Model.LISTDMSUA)
+                    {
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.TENDM</td>
+                            <td>@item.MOTA</td>
+                            @*// chèn thẻ a vào đây nhưng lại muốn lấy được thông tin của danh mục.*@
+                            <td class="NutBam"><a href="~/Home/CapNhatDanhMucMoi?idDanhMuc=@item.ID">Sửa</a>|<a href="">Xóa</a></td>  <!-- đường Link để sửa và xóa. -->
+                            @*// đã lấy thành công Id danh mục.*@
+                            @*// Sử dụng câu lệnh If, câu lệnh Nếu.*@
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+
+        <div class="sua-danh-muc">
+            <div class="sua-danh-muc-moi">
+
+                <h1>Sửa Danh Mục </h1>
+                <!-- Phần action thì sẽ điền link đến phần Controller và Action nhận dữ liệu. -->
+                <form action="~/Home/DanhmucSauSua" method="POST">
+
+                    <input type="text" placeholder="@Model.IDDMSUA" name="idDanhMuc" value="@Model.IDDMSUA"/>
+                    <!-- Truyền thử xem đã. -->
+                    <br />
+                    <input type="text" placeholder="@Model.TENDM" name="TenDMmoi" />
+                    <br />
+                    <input type="text" placeholder="@Model.MOTA" name="MoTamoi" />
+                    <button type="submit" class="btn btn-default">Sửa danh mục.</button>
+
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </section>
+</body>
+</html>
+

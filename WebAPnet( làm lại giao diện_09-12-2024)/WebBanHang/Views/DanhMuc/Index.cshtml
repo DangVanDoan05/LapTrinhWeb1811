@@ -1,0 +1,153 @@
+﻿@model List<DTO.DanhMucDTO>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/Category.css" rel="stylesheet" />
+    <title>HomeIndex_Danh mục sản phẩm.</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trang danh mục sản phẩm, Trang hiển thị sản phẩm </h1> <!--Sẽ làm nội dung cho phần Header sau -->
+    </header>
+
+    <section class="admin-content">
+        <!-- Thay admin-content-left bằng "Menu" -->
+        <div class="Menu">
+            <ul>
+                <li>
+                    <a href="">Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Tất cả sản phẩm</a></li>
+                        <li><a href="">Thêm mới</a></li>
+                        <li><a href="">Danh mục</a></li>
+                        <li><a href="">Các thuộc tính</a></li>
+                    </ul>
+                </li>
+                `
+                <li>
+                    <a href="">Thành viên</a>
+                    <ul>
+                        <li><a href="">Tất cả thành viên</a></li>
+                        <li><a href="">Thêm thành viên</a></li>
+                        <li><a href="">Hồ sơ của bạn</a></li>
+                        <li><a href="~/VaiTroTV/Index">Vai trò thành viên</a></li>
+                        <!-- Lỗi chưa có tham số vào cho View này. -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Thay admin-content-right bằng "ThemDanhMuc" -->
+
+        <div class="ThemDanhMuc">
+            <h1>Thêm Danh Mục Mới.</h1>
+            <!-- Phần action thì sẽ điền link đến phần Controller và Action nhận dữ liệu. -->
+            <form action="~/Home/ThemDanhMuc" method="POST" enctype="multipart/form-data">
+                <label for="TenDM">Tên Danh Mục:</label>
+                <input type="text" id="TenDM" placeholder="Nhập tên danh mục" name="TenDM" />
+                <br />
+                <label for="MoTa">Mô Tả:</label>
+                <br />
+                <input type="text" id="MoTa" placeholder="Nhập mô tả" name="MoTa" />
+                <br />
+                <label for="MoTa">Thêm hình ảnh:</label>
+                <br />
+                <label>Vui lòng chọn hình ảnh<span style="color:red">*</span></label>
+                <br />
+                <img src="~/Image/anhDM.jpg" height="150px" width="150px" alt="" />
+                <br />
+                <input type="file" name="ten_anh" />
+                <br />
+                <button type="submit" class="btn btn-default">Thêm mới</button>
+            </form>
+        </div>
+
+        <!-- Thay admin-content-category bằng "BangDanhMuc" -->
+
+        <div class="BangDanhMuc">
+
+            <!-- Thẻ để tạo bảng. -->
+            <h1>Danh sách danh mục</h1>
+            <table>
+                <tr>
+
+                    <th>ID</th>   <!-- Thẻ th là tiêu đề của bảng  -->
+                    <th>Tên danh mục</th>
+                    <th>Mô tả</th>
+                    <th>Tùy biến</th>  <!-- để thêm nút sửa xóa vào trang này. -->
+
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.TENDM</td>
+                        <td>@item.MOTA</td>
+                        @*// chèn thẻ a vào đây nhưng lại muốn lấy được thông tin của danh mục.*@
+                        <td class="NutBam">
+                            <a href="~/Home/CapNhatDanhMucMoi?idDanhMuc=@item.ID">Sửa</a>|
+                            <a href="~/Home/XoaDanhMuc?idDanhMuc=@item.ID" onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục: @item.TENDM');">Xóa</a>
+                            @*<a href="#" onclick="XoaDanhMuc(@item.ID)">Xóa</a>*@
+                            @*<a href=" ./js/XoaDM.js">Xóa</a>*@
+                        </td>
+                        <!-- đường Link để sửa và xóa. -->
+                        @*//Link href="Link đến Controller muốn vào/Action muốn vào/tham số truyền vào Action." //*@
+                        @*// Sử dụng câu lệnh If, câu lệnh Nếu.*@
+                    </tr>
+                }
+            </table>
+
+        </div>
+
+        @*<div class="sua-danh-muc">
+            <div class="sua-danh-muc-moi">
+
+                <h1>Sửa Danh Mục </h1>
+                 Phần action thì sẽ điền link đến phần Controller và Action nhận dữ liệu.
+                <form action="~/Home/ThemDanhMuc" method="POST">
+                    <input type="text" placeholder="ID danh mục chọn" name="ID" />
+                    <br />
+                    <input type="text" placeholder="Nhập tên danh mục muốn đổi lại" name="TenDMMoi" />
+                    <br />
+                    <input type="text" placeholder="Nhập mô tả muốn đổi lại" name="MoTaMoi" />
+                    <button type="submit" class="btn btn-default">Sửa danh mục.</button>
+
+                </form>
+            </div>
+
+        </div>*@
+
+        <script>
+            function chooseImage() {
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = 'image/*';
+
+                input.onchange = (e) => {
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        const imagePreview = document.getElementById('image-preview');
+                        imagePreview.src = reader.result;
+                    };
+                    reader.readAsDataURL(e.target.files[0]);
+                };
+
+                input.click();
+            }
+        </script>
+
+    </section>
+
+</body>
+</html>
+
+
