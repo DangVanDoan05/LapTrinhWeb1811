@@ -34,3 +34,12 @@ E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.csproj
 E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.csproj.CopyComplete
 E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.dll
 E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DAO\obj\Debug\DAO.pdb
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\bin\Debug\DAO.dll
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\bin\Debug\DAO.pdb
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\bin\Debug\DTO.dll
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\bin\Debug\DTO.pdb
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\obj\Debug\DAO.dll
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DAO\obj\Debug\DAO.pdb

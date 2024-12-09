@@ -16,3 +16,9 @@ E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.csproj
 E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.dll
 E:\LAP TRINH WebPHP\WebAPNet truyền nhiều tham số\DTO\obj\Debug\DTO.pdb
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DTO\bin\Debug\DTO.dll
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DTO\bin\Debug\DTO.pdb
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DTO\obj\Debug\DTO.dll
+D:\Lập trình WebAPNET_09-12-2024\LapTrinhWeb1811\WebAPnet( làm lại giao diện_09-12-2024)\DTO\obj\Debug\DTO.pdb
